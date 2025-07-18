@@ -113,7 +113,7 @@ label {
 
     label {
         display: block;
-        margin-top: -40px;
+        margin-top: -30px;
         padding: 0px 10px;
         font-size: 40px;
         cursor: pointer;
@@ -249,15 +249,6 @@ span {
     content: "Software Developer";
     color : #f10c0c;
     animation: words 20s infinite;
-}
-
-.typing-text span::after {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: calc(40% + 8px);
-    height: 100%;
-    right: -8;
 }
 
 @keyframes words{
