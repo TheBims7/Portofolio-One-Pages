@@ -164,6 +164,30 @@ span {
     color: #f10c0c;
 }
 
+.typing {
+    display: inline-flex;
+    width: 17ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    animation: typing 3s steps(17) infinite alternate-reverse, blink 0.5s infinite;
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    from {
+        border-color: white;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
 .home-content h3{
     font-size: 4rem;
     margin-bottom: 1rem;
