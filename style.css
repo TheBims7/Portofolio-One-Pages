@@ -322,6 +322,10 @@ span {
         margin-top: 2cm;
         border-radius: 5%;
     }
+
+    .typing {
+        display: block;
+    }
 }
 
 .about {
