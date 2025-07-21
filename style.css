@@ -166,11 +166,11 @@ span {
 
 .typing {
     display: inline-flex;
-    width: 17ch;
+    width: 16ch;
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid white;
-    animation: typing 3s steps(17) infinite alternate-reverse, blink 0.5s infinite;
+    animation: typing 3s steps(16) infinite alternate-reverse, blink 0.5s infinite;
 }
 
 @keyframes typing{
@@ -325,6 +325,7 @@ span {
 
     .typing {
         display: block;
+        animation: typing 2s steps(16) infinite alternate-reverse, blink 0.3s infinite;
     }
 }
 
