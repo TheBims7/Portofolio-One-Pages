@@ -588,3 +588,16 @@ h5 {
         margin-top: 15px;
     }
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f10c0c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #858383;
+}
