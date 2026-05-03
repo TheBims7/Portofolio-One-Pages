@@ -110,7 +110,7 @@ label {
     
     nav ul{
         position: relative;
-        width: 100%;
+        width: 110%;
         background: rgb(51, 51, 53);
         max-height: 0;
         overflow: hidden;
