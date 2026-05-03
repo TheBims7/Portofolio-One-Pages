@@ -75,11 +75,16 @@ nav a {
     text-transform: capitalize;
     font-size: 1.8rem;
     margin-left: 4rem;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: #f10c0c;
     transition: .4s;
+}
+
+nav ul li a.active {
+    color: #f10c0c;
 }
 
 #nav-button {
