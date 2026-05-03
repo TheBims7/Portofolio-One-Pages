@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae Fariz Bima P</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png">
+    <style>
+        .tampilan{        
+            width: 75%;
+            margin: auto;
+            grid-template-rows: 0.33fr 1fr;
+            box-shadow: 0px 0px 20px rgb(46, 45, 43);
+        }
+
+        .tampilan .bagian-satu{
+            padding: 50px;
+            background-color: rgb(0, 0, 0);
+            text-decoration-color:rgb(254, 255, 255);
+        }
+
+        h1{
+            text-align: center;
+            color: whitesmoke;
+            font-size: 15mm;
+        }
+
+        .tampilan .bagian-dua{
+            padding-left: 50px;
+            background-color: rgb(255, 255, 255);
+            grid-template-columns: 0.65fr 0.35fr;
+            display: grid;
+        }
+
+        .foto {
+            padding-top: 40px;
+            padding-left: 40px;   
+        }
+
+        img{
+            width: 230px;
+            height: 310px;
+        }
+
+        table{
+            font-size: 4.5mm;
+            width: 1000;
+        }
+
+        .tampilan .bagian-tiga{
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2{
+            font-size: 8mm;
+        }
+
+        .tampilan .bagian-tiga .list ul{
+            position: relative;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+
+        .tampilan .bagian-tiga .list ul::before{
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 20px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color:black;
+        }
+
+        .tampilan .bagian-tiga .list ul li{
+            list-style-type: none;
+            position: relative;
+        }
+
+        .tampilan .bagian-tiga .list ul li::before{
+            content: "";
+            position: absolute; 
+            top: 4px;
+            left: -17px;
+            height: 38px;
+            border-left: 2px solid black;
+        }
+
+        .tampilan .bagian-tiga .list ul:last-of-type li::before{
+            content: none;
+        }
+
+        @media(max-width:600px){
+            .tampilan {
+                width: 100%;
+            }
+
+            h1{
+                font-size: 6.1mm;
+            }
+
+            .tampilan .bagian-dua{
+                display: block;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            h2{
+                font-size: 5.5mm;
+            }
+            
+            .foto {
+                padding-top: 10px;
+                padding-left: 70px;   
+            }
+
+            img{
+                width: 180px;
+                height: 230px;
+            }
+
+            table{
+                margin-left: -40px;
+                font-size: 2.5mm;
+            }
+
+            .tampilan .bagian-tiga{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .tampilan .bagian-tiga .list ul{
+                margin-left: -15px;
+                font-size: 12px;
+            }
+        }
+
+        @media(min-width:600px) and (max-width:950px){
+            .tampilan {
+                width: 100%;
+            }
+
+            h1{
+                font-size: 10mm;
+            }
+
+            .tampilan .bagian-dua{
+                display: flex;
+                grid-template-columns: none;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            h2{
+                font-size: 5.5mm;
+            }
+            
+            .foto {
+                padding-top: 30px;
+                padding-left: 20px; 
+            }
+
+            img{
+                width: 190px;
+                height: 245px;
+            }
+
+            table{
+                margin-left: -40px;
+                font-size: 3.4mm;
+            }
+
+            .tampilan .bagian-tiga{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .tampilan .bagian-tiga .list ul{
+                margin-left: -15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tampilan">
+        <div class="bagian-satu">
+            <div class="heading"></div>
+                <h1>CURRICULUM VITAE (CV)</h1>
+        </div>
+        <div class="bagian-dua">
+            <div class="data">
+                <h2>DATA DIRI</h2><hr color="black">
+                <ul>
+                    <table cellpadding="2">
+                        <tr>
+                            <td>Nama</td>
+                            <td>: Fariz Bima Prayoga</td>
+                        </tr>
+                        <tr>
+                            <td>Tempat & Tanggal Lahir</td>
+                            <td>: Boyolali, 07 April 2005</td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>: Laki-Laki</td>
+                        </tr>
+                        <tr>
+                            <td>Agama</td>
+                            <td>: Islam</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>: Tegalrejo, Tegalrejo, Sawit, Boyolali</td>
+                        </tr>
+                        <tr>
+                            <td>No. Telepon</td>
+                            <td>: 085747775411</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td>: Belum Menikah</td>
+                        </tr>
+                        <tr>
+                            <td>Kewarganegaraan</td>
+                            <td>: Indonesia</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>: farizbimaprayoga@gmail.com</td>
+                        </tr>
+                    </table>
+                </ul>
+            </div>
+            <div class="foto"><img src="home-img.JPG"></div>
+        </div>        
+        <div class="bagian-tiga">
+            <h2>RIWAYAT PENDIDIKAN<hr color="black"></h2>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div>2009-2011 : TK Aisyiyah Tegalrejo</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div>2011-2017 : MI Tegalrejo</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div>2017-2023 : MTsN 4 Boyolali</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div>2020-2023 : SMAN 1 Banyudono</div>
+                    </li>
+                </ul>
+            </div>
+            <h2>RIWAYAT ORGANISASI<hr color="black"></h2>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div>Rohis SMAN 1 Banyudono</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div>Paskibra SMAN 1 Banyudono</div>
+                    </li>
+                </ul>
+            </div>
+            <h2>PENGALAMAN ORGANISASI<hr color="black"></h2>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div>Ketua Paskibra SMAN 1 Banyudono</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div>Paskibraka Kecamatan Banyudono</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div>Perkemahan Kwatir Cabang Boyolali</div>
+                    </li>
+                </ul>
+            </div>
+            <h2>KEAHLIAN<hr color="black"></h2>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div>Menguasai pemrograman C++, Java, HTML</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div>Merancang alat dan program embedded system</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div>Menguasai Microsoft Word, Power Point, dan Excel</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
