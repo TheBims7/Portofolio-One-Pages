@@ -42,6 +42,17 @@ header {
     z-index: 100;
 }
 
+/* efek saat scroll */
+header.active {
+    background-color: grey;
+    padding: 0.5rem 3% 1.5rem;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+.logo, nav {
+    margin-top: 20px;
+}
+
 .logo {
     font-size: 3rem;
     color: white;
@@ -85,6 +96,10 @@ label {
         align-items: baseline;
     }
 
+    header.active {
+        padding: 0.5rem 5% 1.5rem;
+    }
+
     nav {
         align-items: center;
     }
@@ -95,21 +110,23 @@ label {
         background: rgb(51, 51, 53);
         max-height: 0;
         overflow: hidden;
+        left: -20px;
     }
 
     nav li{
-        width: 100%;
+        width: 110%;
         display: block;
-        padding: 5px;
+        padding: 10px;
+        margin-left: -30px;
     }
 
     nav a{
         width: 100%;
-        display: block;
     }
 
     nav li:hover {
-        background: #13f8ed;
+        background: #f10c0c;
+        color: white;
     }
 
     label {
@@ -165,27 +182,18 @@ span {
     color: #f10c0c;
 }
 
-.typing {
-    display: inline-flex;
-    width: 16ch;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid white;
-    animation: typing 3s steps(16) infinite alternate-reverse, blink 0.5s infinite;
+.cursor {
+    padding-right: 2px;
+    border-right: 3px solid white;
+    animation: blink 0.5s infinite;
 }
 
-@keyframes typing{
-    from {
-        width: 0;
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
     }
-}
-
-@keyframes blink{
-    from {
-        border-color: white;
-    }
-    to {
-        border-color: transparent;
+    25%, 75% {
+        opacity: 0;
     }
 }
 
@@ -322,11 +330,6 @@ span {
         height: 5cm;
         margin-top: 2cm;
         border-radius: 5%;
-    }
-
-    .typing {
-        display: block;
-        animation: typing 2s steps(16) infinite alternate-reverse, blink 0.3s infinite;
     }
 }
 
